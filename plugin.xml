@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.schwartzer.bgs.wifisniff"
-        version="0.0.22">
+        version="0.0.23">
 
     <name>Background Service Plugin - Wifisniff Service</name>
 
@@ -19,8 +19,10 @@
 
 	<!-- Load in the core background service -->
 	<dependency id="com.red_folder.phonegap.plugin.backgroundservice" url="https://github.com/Red-Folder/bgs-core.git"/>
-	<dependency id="org.apache.cordova.device" />
+	
+	<!--<dependency id="org.apache.cordova.device" />
 	<dependency id="org.apache.cordova.dialogs" />
+	!-->
 
     <!-- android -->
     <platform name="android">
