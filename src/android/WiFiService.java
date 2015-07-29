@@ -33,7 +33,7 @@ import android.os.Bundle;
 
 import org.apache.cordova.*;
 
-/*
+
 
 public class MainActivity extends CordovaActivity
 {
@@ -46,7 +46,7 @@ public class MainActivity extends CordovaActivity
     }
 }
 
-
+/*
 public class WiFiService extends BackgroundService {
     private static final String TAG = "WiFiService";
     private static final int NOTIFICATION_ID = 7124;
