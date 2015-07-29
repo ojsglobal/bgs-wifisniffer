@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.schwartzer.bgs.wifisniff"
-        version="0.0.4">
+        version="0.0.5">
 
     <name>Background Service Plugin - Wifisniff Service</name>
 
@@ -32,8 +32,7 @@
             
         </config-file>
         
-      	<source-file src="src/android/WiFiService.java" target-dir="src/com/schwartzer/bgs/wifisniff" />
-		<source-file src="src/android/MainActivity.java" target-dir="src/com/schwartzer/bgs/wifisniff" />
+      	<source-file src="src/android/WiFiService.java" target-dir="src/com/schwartzer/bgs/wifisniff/WiFiService" />
 
     </platform>
 
