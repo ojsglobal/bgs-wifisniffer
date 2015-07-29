@@ -20,7 +20,7 @@ import android.net.wifi.WifiManager;
 import android.util.Log;
 
 import android.support.v4.app.NotificationCompat;
-/*
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -29,6 +29,8 @@ import java.util.List;
 
 
 import android.os.Bundle;
+/*
+
 import org.apache.cordova.*;
 
 
