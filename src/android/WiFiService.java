@@ -1,10 +1,10 @@
 package com.schwartzer.bgs.wifisniff;
 
 
-
-//import com.schwartzer.bgs.wifisniff.MainActivity;
 import com.red_folder.phonegap.plugin.backgroundservice.BackgroundService;
-import com.schwartzer.bgs.wifisniff.R;
+//import com.schwartzer.bgs.wifisniff.R;
+
+
 /*
 import android.app.Notification;
 import android.app.NotificationManager;
