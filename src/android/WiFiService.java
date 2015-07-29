@@ -19,8 +19,9 @@ import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 import android.util.Log;
 
-import android.support.v4.app.NotificationCompat;
-/*
+//import android.support.v4.app.NotificationCompat;
+
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -32,7 +33,7 @@ import android.os.Bundle;
 import org.apache.cordova.*;
 
 
-
+/*
 public class MainActivity extends CordovaActivity
 {
     @Override
@@ -124,7 +125,7 @@ public class WiFiService extends BackgroundService {
         Intent intent = new Intent(this.getBaseContext(), MainActivity.class);
         PendingIntent pIntent = PendingIntent.getActivity(getBaseContext(), 0, intent, 0);
         NotificationCompat.Builder nBuilder =
-                new NotificationCompat.Builder(this)
+                new		.Builder(this)
                 .setSmallIcon(R.drawable.service_icon)
                 .setContentTitle(notificationTitle)
                 .setContentText(notificationText)
