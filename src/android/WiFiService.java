@@ -5,19 +5,19 @@ import com.red_folder.phonegap.plugin.backgroundservice.BackgroundService;
 //import com.schwartzer.bgs.wifisniff.R;
 
 
-
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 import android.util.Log;
+
+import android.R;
 
 import android.support.v4.app.NotificationCompat;
 
@@ -26,26 +26,6 @@ import org.json.JSONObject;
 
 import java.util.Date;
 import java.util.List;
-
-
-import android.os.Bundle;
-
-
-//import org.apache.cordova.*;
-
-
-/*
-public class MainActivity extends CordovaActivity
-{
-    @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        // Set by <content src="index.html" /> in config.xml
-        loadUrl(launchUrl);
-    }
-}
-
 
 
 public class WiFiService extends BackgroundService {
@@ -64,8 +44,8 @@ public class WiFiService extends BackgroundService {
     public void onCreate() {
         super.onCreate();
 
-        notificationText = "Welcome to your workout.";
-        notificationTitle = "PT Push";
+        notificationText = "WiFi Network Detected";
+        notificationTitle = "WiFi Service";
         notification = null;
         wifiSSID = "NONE";
         listening = false;
@@ -103,13 +83,16 @@ public class WiFiService extends BackgroundService {
     }
 
     private void showPersistentNotification() {
-        Intent intent = new Intent(this.getBaseContext(), MainActivity.class);
+        PackageManager pm = getPackageManager();
+        Intent intent = pm.getLaunchIntentForPackage(getApplicationContext().getPackageName());
+        //Intent intent = new Intent(this.getApplicationContext(), this.getApplicationContext().getPackageName());
+        //Intent intent = new Intent(this.getBaseContext(), MainActivity.class);
         PendingIntent pIntent = PendingIntent.getActivity(getBaseContext(), 0, intent, 0);
         NotificationCompat.Builder nBuilder =
                 new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.service)
+                        .setSmallIcon(R.drawable.arrow_down_float)
                         .setContentTitle(notificationTitle)
-                        .setContentText("Working correctly.")
+                        .setContentText("Tap to open application")
                         .setOngoing(true)
                         .setContentIntent(pIntent);
 
@@ -124,11 +107,13 @@ public class WiFiService extends BackgroundService {
     }
 
     private void showNotification() {
-        Intent intent = new Intent(this.getBaseContext(), MainActivity.class);
+        PackageManager pm = getPackageManager();
+        Intent intent = pm.getLaunchIntentForPackage(getApplicationContext().getPackageName());
+        //Intent intent = new Intent(this.getBaseContext(), MainActivity.class);
         PendingIntent pIntent = PendingIntent.getActivity(getBaseContext(), 0, intent, 0);
         NotificationCompat.Builder nBuilder =
-                new		.Builder(this)
-                .setSmallIcon(R.drawable.service_icon)
+                new NotificationCompat.Builder(this)
+                .setSmallIcon(R.drawable.arrow_down_float)
                 .setContentTitle(notificationTitle)
                 .setContentText(notificationText)
                 .setAutoCancel(true)
@@ -200,4 +185,3 @@ public class WiFiService extends BackgroundService {
         }
     }
 }
-*/
