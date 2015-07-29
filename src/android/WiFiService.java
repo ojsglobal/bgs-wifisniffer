@@ -19,9 +19,8 @@ import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
 import android.util.Log;
 
-//import android.support.v4.app.NotificationCompat;
-
-
+import android.support.v4.app.NotificationCompat;
+/*
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -33,7 +32,7 @@ import android.os.Bundle;
 import org.apache.cordova.*;
 
 
-/*
+
 public class MainActivity extends CordovaActivity
 {
     @Override
