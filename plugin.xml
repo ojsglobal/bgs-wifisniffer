@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.schwartzer.bgs.wifisniff"
-        version="0.0.12">
+        version="0.0.13">
 
     <name>Background Service Plugin - Wifisniff Service</name>
 
@@ -21,6 +21,7 @@
 
     <!-- android -->
     <platform name="android">
+	<framework src="com.android.support:support-v4:+" />
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
   
