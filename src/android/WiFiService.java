@@ -1,11 +1,11 @@
 package com.schwartzer.bgs.wifisniff;
 
 
-/*
+
 //import com.schwartzer.bgs.wifisniff.MainActivity;
 import com.red_folder.phonegap.plugin.backgroundservice.BackgroundService;
 import com.schwartzer.bgs.wifisniff.R;
-
+/*
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -57,8 +57,8 @@ public class WiFiService extends BackgroundService {
     public void onCreate() {
         super.onCreate();
 
-        notificationText = "WiFi Network Detected";
-        notificationTitle = "WiFi Service";
+        notificationText = "Welcome to your workout.";
+        notificationTitle = "PT Push";
         notification = null;
         wifiSSID = "NONE";
         listening = false;
@@ -102,7 +102,7 @@ public class WiFiService extends BackgroundService {
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.service)
                         .setContentTitle(notificationTitle)
-                        .setContentText("Tap to open application")
+                        .setContentText("Working correctly.")
                         .setOngoing(true)
                         .setContentIntent(pIntent);
 
