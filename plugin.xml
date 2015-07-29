@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.schwartzer.bgs.wifisniff"
+        version="0.0.1">
+
+    <name>Background Service Plugin - Wifisniff Service</name>
+
+    <description>
+        Android Background Service for sniffing wifis
+    </description>
+
+    <license>Apache 2.0</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+	<!-- Load in the core background service -->
+	<dependency id="com.red_folder.phonegap.plugin.backgroundservice" url="https://github.com/Red-Folder/bgs-core.git"/>
+
+    <!-- android -->
+    <platform name="android">
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+  
+            <service android:name="com.schwartzer.bgs.wifisniff.WiFiService">
+                <intent-filter>         
+                    <action android:name="com.schwartzer.bgs.wifisniff.WiFiService"/> 
+                </intent-filter>     
+            </service>
+            
+        </config-file>
+        
+      	<source-file src="src/android/WiFiService.java" target-dir="src/com/schwartzer/bgs/wifisniff" />
+		<source-file src="src/android/MainActivity.java" target-dir="src/com/schwartzer/bgs/wifisniff" />
+		
+
+    </platform>
+
+</plugin>
