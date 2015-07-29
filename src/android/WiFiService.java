@@ -46,7 +46,7 @@ public class MainActivity extends CordovaActivity
     }
 }
 
-*/
+
 
 public class WiFiService extends BackgroundService {
     private static final String TAG = "WiFiService";
