@@ -5,7 +5,7 @@ import com.red_folder.phonegap.plugin.backgroundservice.BackgroundService;
 //import com.schwartzer.bgs.wifisniff.R;
 
 
-
+/*
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -25,7 +25,7 @@ import org.json.JSONObject;
 import java.util.Date;
 import java.util.List;
 
-/*
+
 import android.os.Bundle;
 import org.apache.cordova.*;
 
