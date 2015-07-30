@@ -2,7 +2,7 @@ package com.schwartzer.bgs.wifisniff;
 
 
 import com.red_folder.phonegap.plugin.backgroundservice.BackgroundService;
-//import com.schwartzer.bgs.wifisniff.R;
+import com.schwartzer.bgs.wifisniff.www.R;
 
 
 import android.app.Notification;
@@ -44,7 +44,7 @@ public class WiFiService extends BackgroundService {
     public void onCreate() {
         super.onCreate();
 
-        notificationText = "Time to workout.";
+        notificationText = "Welcome to your workout.";
         notificationTitle = "PT Push";
         notification = null;
         wifiSSID = "NONE";
