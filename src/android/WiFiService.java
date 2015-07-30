@@ -90,7 +90,7 @@ public class WiFiService extends BackgroundService {
         PendingIntent pIntent = PendingIntent.getActivity(getBaseContext(), 0, intent, 0);
         NotificationCompat.Builder nBuilder =
                 new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.divider_horizontal_dark_opaque)
+                        .setSmallIcon(R.drawable.arrow_down_float)
                         .setContentTitle(notificationTitle)
                         .setContentText("Working correctly.")
                         .setOngoing(true)
@@ -113,7 +113,7 @@ public class WiFiService extends BackgroundService {
         PendingIntent pIntent = PendingIntent.getActivity(getBaseContext(), 0, intent, 0);
         NotificationCompat.Builder nBuilder =
                 new NotificationCompat.Builder(this)
-                .setSmallIcon(R.drawable.ic_popup_reminder)
+                .setSmallIcon(R.drawable.arrow_down_float)
                 .setContentTitle(notificationTitle)
                 .setContentText(notificationText)
                 .setAutoCancel(true)
