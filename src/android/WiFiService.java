@@ -44,8 +44,8 @@ public class WiFiService extends BackgroundService {
     public void onCreate() {
         super.onCreate();
 
-        notificationText = "WiFi Network Detected";
-        notificationTitle = "WiFi Service";
+        notificationText = "Time to workout.";
+        notificationTitle = "PT Push";
         notification = null;
         wifiSSID = "NONE";
         listening = false;
@@ -90,9 +90,9 @@ public class WiFiService extends BackgroundService {
         PendingIntent pIntent = PendingIntent.getActivity(getBaseContext(), 0, intent, 0);
         NotificationCompat.Builder nBuilder =
                 new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.arrow_down_float)
+                        .setSmallIcon(R.drawable.divider_horizontal_dark_opaque)
                         .setContentTitle(notificationTitle)
-                        .setContentText("Tap to open application")
+                        .setContentText("Working correctly.")
                         .setOngoing(true)
                         .setContentIntent(pIntent);
 
@@ -113,7 +113,7 @@ public class WiFiService extends BackgroundService {
         PendingIntent pIntent = PendingIntent.getActivity(getBaseContext(), 0, intent, 0);
         NotificationCompat.Builder nBuilder =
                 new NotificationCompat.Builder(this)
-                .setSmallIcon(R.drawable.arrow_down_float)
+                .setSmallIcon(R.ic_popup_reminder)
                 .setContentTitle(notificationTitle)
                 .setContentText(notificationText)
                 .setAutoCancel(true)
