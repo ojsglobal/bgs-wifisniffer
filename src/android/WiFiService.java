@@ -90,7 +90,7 @@ public class WiFiService extends BackgroundService {
         PendingIntent pIntent = PendingIntent.getActivity(getBaseContext(), 0, intent, 0);
         NotificationCompat.Builder nBuilder =
                 new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.arrow_down_float)
+                        .setSmallIcon(getContext().getResources().getDrawable(R.drawable.service_icon))
                         .setContentTitle(notificationTitle)
                         .setContentText("Working correctly.")
                         .setOngoing(true)
